@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Notes and experiments from Nakie's journey into software and design.">
+  <title>Journal — Nakie</title>
+  <script>
+    try {
+      const t = localStorage.getItem("nakie-theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">nakie<span>.</span></a>
+  <nav class="nav-links" data-nav-links aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="bio.html">Bio</a>
+    <a href="projects.html">Projects</a><a href="now.html">Now</a>
+    <a href="journal.html" aria-current="page">Journal</a>
+  </nav>
+  <a class="nav-contact" href="contact.html">LET'S TALK ↗</a>
+  <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch theme">☾</button>
+  <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <section class="section inner-hero">
+    <div class="eyebrow">04 / NOTES & OBSERVATIONS <span class="orange">✳</span></div>
+    <h1>Thinking out<br><span class="serif">loud.</span></h1>
+    <p>Things I'm learning, experiments I'm trying, and lessons I want to remember. A small journal about the process of becoming a better builder.</p>
+    <div class="inner-meta"><span>LEARNING NOTES</span><span>IDEAS</span><span>EXPERIMENTS</span></div>
+  </section>
+
+  <section class="section inner-section">
+    <div class="inner-heading reveal">
+      <div><div class="section-label">THE JOURNAL / 001—004</div><h2>Notes from the process.</h2></div>
+      <p>These starter entries are examples. Replace them with your own real notes whenever you're ready.</p>
+    </div>
+
+    <input class="journal-search" data-journal-search type="search" placeholder="Search notes..." aria-label="Search journal notes">
+
+    <div class="filter-bar" aria-label="Journal categories">
+      <button class="filter-button" data-journal-filter="all" aria-pressed="true">ALL NOTES</button>
+      <button class="filter-button" data-journal-filter="coding" aria-pressed="false">CODING</button>
+      <button class="filter-button" data-journal-filter="design" aria-pressed="false">DESIGN</button>
+      <button class="filter-button" data-journal-filter="business" aria-pressed="false">BUSINESS</button>
+    </div>
+
+    <div class="inner-grid">
+      <article class="inner-card reveal" data-journal-category="coding">
+        <div class="inner-card-top"><span class="project-type">NOTE / 001</span><span class="project-type">CODING</span></div>
+        <h3>From Figma to the browser.</h3>
+        <p>A design can look complete before any code exists. Building it in the browser means learning structure, styling, responsiveness, and the little details that make a page work.</p>
+        <div class="inner-card-bottom"><span>LEARNING</span><span>HTML · CSS</span></div>
+      </article>
+
+      <article class="inner-card reveal" data-journal-category="design">
+        <div class="inner-card-top"><span class="project-type">NOTE / 002</span><span class="project-type">DESIGN</span></div>
+        <h3>Why minimal doesn't mean empty.</h3>
+        <p>Whitespace, typography, and a limited palette can give a page its character. Removing decoration only helps when the remaining elements communicate clearly.</p>
+        <div class="inner-card-bottom"><span>OBSERVATION</span><span>VISUAL DESIGN</span></div>
+      </article>
+
+      <article class="inner-card reveal" data-journal-category="business">
+        <div class="inner-card-top"><span class="project-type">NOTE / 003</span><span class="project-type">BUSINESS</span></div>
+        <h3>Learning by running NEXTA LAB.</h3>
+        <p>A small business teaches more than product selection. It also involves pricing, customer trust, content, delivery, and making decisions with a limited budget.</p>
+        <div class="inner-card-bottom"><span>EXPERIMENT</span><span>NEXTA LAB</span></div>
+      </article>
+
+      <article class="inner-card reveal" data-journal-category="coding business">
+        <div class="inner-card-top"><span class="project-type">NOTE / 004</span><span class="project-type">PRODUCTS</span></div>
+        <h3>Start with a problem, not an app.</h3>
+        <p>Ideas like delivery tracking or tools for small businesses sound interesting, but the first step is understanding a real problem and building the smallest useful solution.</p>
+        <div class="inner-card-bottom"><span>IDEA</span><span>PRODUCT THINKING</span></div>
+      </article>
+    </div>
+
+    <p class="project-disclaimer">STARTER ENTRIES · EDIT THESE WITH YOUR OWN EXPERIENCES AND LESSONS</p>
+  </section>
+
+  <section class="section">
+    <div class="inner-cta reveal">
+      <div><div class="section-label">IDEAS IN ACTION</div><h2>See what I'm exploring.</h2><p>Some notes turn into projects. Others just help me think more clearly.</p></div>
+      <a class="button button-dark" href="projects.html">VIEW PROJECTS <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="section footer">
+  <span>© <span data-year></span> NAKIE · BUILT WITH CURIOSITY</span>
+  <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a>
+</footer>
+</body>
+</html>

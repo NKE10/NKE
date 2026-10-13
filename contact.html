@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Nakie about projects, ideas, and collaborations.">
+  <title>Contact — Nakie</title>
+  <script>
+    try {
+      const t = localStorage.getItem("nakie-theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">nakie<span>.</span></a>
+  <nav class="nav-links" data-nav-links aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="bio.html">Bio</a>
+    <a href="projects.html">Projects</a><a href="now.html">Now</a>
+    <a href="journal.html">Journal</a>
+  </nav>
+  <a class="nav-contact" href="#message">SEND A MESSAGE ↘</a>
+  <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch theme">☾</button>
+  <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <section class="section inner-hero">
+    <div class="eyebrow">05 / GET IN TOUCH <span class="orange">✳</span></div>
+    <h1>Something on<br><span class="serif">your mind?</span></h1>
+    <p>Have an interesting idea, want to talk about a project, or just want to connect? I'm open to conversations about software, design, and building things.</p>
+    <div class="inner-meta"><span>PROJECTS</span><span>IDEAS</span><span>COLLABORATION</span></div>
+  </section>
+
+  <section class="section inner-section" id="message">
+    <div class="contact-layout">
+      <div class="reveal">
+        <div class="section-label">LET'S START HERE / 001</div>
+        <h2 style="font:800 clamp(35px,5vw,55px)/1.03 var(--display);letter-spacing:-.075em;margin-top:20px">Good things<br>start with<br><span class="serif">a conversation.</span></h2>
+        <p style="margin-top:20px;color:#85837b;font-size:13px;line-height:1.9;max-width:380px">I'm interested in learning from people, exploring ideas, and finding practical ways technology can make things better.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="inner-icon">✉</span>
+            <div><strong>Email</strong><small id="contact-email-display">hello@example.com</small></div>
+          </div>
+          <div class="contact-detail">
+            <span class="inner-icon">↗</span>
+            <div><strong>Based in</strong><small>Cambodia</small></div>
+          </div>
+        </div>
+
+        <button class="button button-dark" type="button" data-copy-email="hello@example.com" style="margin-top:22px">COPY EMAIL <span>↗</span></button>
+        <p style="margin-top:17px;color:#85837b;font-size:10px;line-height:1.8">Replace the placeholder email and add your preferred social links before publishing.</p>
+      </div>
+
+      <form class="contact-form reveal" data-contact-form data-recipient="hello@example.com">
+        <div class="section-label">A QUICK MESSAGE / 002</div>
+        <h2>Write me a note.</h2>
+        <p>Fill this out and your email app will open with a message ready to review and send.</p>
+
+        <div class="form-field">
+          <label for="name">YOUR NAME</label>
+          <input class="form-input" id="name" name="name" autocomplete="name" placeholder="Name or nickname" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">YOUR EMAIL</label>
+          <input class="form-input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-field">
+          <label for="topic">WHAT'S THIS ABOUT?</label>
+          <select class="form-input" id="topic" name="topic">
+            <option>Just saying hello</option>
+            <option>Project collaboration</option>
+            <option>Website or design</option>
+            <option>NEXTA LAB</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">YOUR MESSAGE</label>
+          <textarea class="form-input" id="message" name="message" placeholder="Tell me what's on your mind..." required></textarea>
+        </div>
+
+        <button class="button button-dark form-submit" type="submit">PREPARE EMAIL <span>↗</span></button>
+        <p>Nothing is sent or stored automatically. You can review the email before sending it.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="inner-cta reveal">
+      <div><div class="section-label">STILL EXPLORING</div><h2>Curious about what I'm building?</h2><p>Have a look through my projects and follow the journey.</p></div>
+      <a class="button button-dark" href="projects.html">EXPLORE PROJECTS <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="section footer">
+  <span>© <span data-year></span> NAKIE · BUILT WITH CURIOSITY</span>
+  <a class="back-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a>
+</footer>
+</body>
+</html>

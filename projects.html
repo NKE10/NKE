@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected software, design, and business experiments by Nakie.">
+  <title>Projects — Nakie</title>
+  <script>
+    try {
+      const t = localStorage.getItem("nakie-theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">nakie<span>.</span></a>
+  <nav class="nav-links" data-nav-links aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="bio.html">Bio</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="now.html">Now</a><a href="journal.html">Journal</a>
+  </nav>
+  <a class="nav-contact" href="contact.html">LET'S TALK ↗</a>
+  <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch theme">☾</button>
+  <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <section class="section inner-hero">
+    <div class="eyebrow">02 / SELECTED WORK <span class="orange">✳</span></div>
+    <h1>Ideas into<br><span class="serif">something real.</span></h1>
+    <p>A collection of things I'm exploring across design, technology, and business. Some are early concepts. Others are skills I'm actively developing.</p>
+    <div class="inner-meta"><span>DESIGN</span><span>SOFTWARE</span><span>EXPERIMENTS</span></div>
+  </section>
+
+  <section class="section inner-section">
+    <div class="inner-heading reveal">
+      <div><div class="section-label">THE COLLECTION / 001—006</div><h2>Selected experiments.</h2></div>
+      <p>Filter by category to explore the ideas I'm interested in.</p>
+    </div>
+
+    <div class="filter-bar" aria-label="Project categories">
+      <button class="filter-button" data-project-filter="all" aria-pressed="true">ALL WORK</button>
+      <button class="filter-button" data-project-filter="design" aria-pressed="false">DESIGN</button>
+      <button class="filter-button" data-project-filter="business" aria-pressed="false">BUSINESS</button>
+      <button class="filter-button" data-project-filter="software" aria-pressed="false">SOFTWARE</button>
+    </div>
+
+    <div class="inner-grid">
+      <article class="inner-card reveal" data-project-category="business design">
+        <div class="inner-card-top"><span class="inner-icon">N.</span><span class="project-type">01 / BRAND</span></div>
+        <h3>NEXTA LAB</h3>
+        <p>A tech-accessories brand exploring useful products, considered presentation, and making a better setup more accessible.</p>
+        <div class="card-tags"><span class="tag">Branding</span><span class="tag">E-commerce</span></div>
+        <div class="inner-card-bottom"><span>IN PROGRESS</span><a href="contact.html">DISCUSS ↗</a></div>
+      </article>
+
+      <article class="inner-card reveal" data-project-category="design">
+        <div class="inner-card-top"><span class="inner-icon">✳</span><span class="project-type">02 / DESIGN</span></div>
+        <h3>Minimal web concepts</h3>
+        <p>Exploring typography, whitespace, visual hierarchy, and clear user experiences through Figma layouts.</p>
+        <div class="card-tags"><span class="tag">Figma</span><span class="tag">UI</span></div>
+        <div class="inner-card-bottom"><span>EXPLORING</span><a href="bio.html">ABOUT ME ↗</a></div>
+      </article>
+
+      <article class="inner-card reveal" data-project-category="software">
+        <div class="inner-card-top"><span class="inner-icon">↗</span><span class="project-type">03 / CONCEPT</span></div>
+        <h3>Delivery & logistics</h3>
+        <p>An idea for making parcel tracking and delivery information easier to understand for local users and businesses.</p>
+        <div class="card-tags"><span class="tag">Logistics</span><span class="tag">Apps</span></div>
+        <div class="inner-card-bottom"><span>FUTURE IDEA</span><a href="now.html">MY FOCUS ↗</a></div>
+      </article>
+
+      <article class="inner-card reveal" data-project-category="business software">
+        <div class="inner-card-top"><span class="inner-icon">▦</span><span class="project-type">04 / PRODUCT</span></div>
+        <h3>Small business tools</h3>
+        <p>Simple digital tools that help small businesses organize information and reduce repetitive work.</p>
+        <div class="card-tags"><span class="tag">Productivity</span><span class="tag">Web apps</span></div>
+        <div class="inner-card-bottom"><span>FUTURE IDEA</span><a href="journal.html">READ NOTES ↗</a></div>
+      </article>
+
+      <article class="inner-card reveal" data-project-category="software business">
+        <div class="inner-card-top"><span class="inner-icon">⌘</span><span class="project-type">05 / WEB</span></div>
+        <h3>Business websites</h3>
+        <p>Fast, clear websites for Cambodian businesses that need a stronger online presence without unnecessary complexity.</p>
+        <div class="card-tags"><span class="tag">Web development</span><span class="tag">Local business</span></div>
+        <div class="inner-card-bottom"><span>FUTURE IDEA</span><a href="contact.html">GET IN TOUCH ↗</a></div>
+      </article>
+
+      <article class="inner-card reveal" data-project-category="design software">
+        <div class="inner-card-top"><span class="inner-icon">⌘</span><span class="project-type">06 / PERSONAL</span></div>
+        <h3>This portfolio</h3>
+        <p>A personal website built to practice web development and document the things I'm learning along the way.</p>
+        <div class="card-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="inner-card-bottom"><span>LEARNING</span><a href="now.html">WHAT'S NEXT ↗</a></div>
+      </article>
+    </div>
+
+    <p class="project-disclaimer">CONCEPTS AND LEARNING PROJECTS ARE LABELLED HONESTLY · MORE TO COME</p>
+  </section>
+
+  <section class="section">
+    <div class="inner-cta reveal">
+      <div><div class="section-label">HAVE AN IDEA?</div><h2>Let's make something useful.</h2><p>I'm always interested in learning, exploring problems, and discussing interesting ideas.</p></div>
+      <a class="button button-dark" href="contact.html">GET IN TOUCH <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="section footer">
+  <span>© <span data-year></span> NAKIE · BUILT WITH CURIOSITY</span>
+  <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a>
+</footer>
+</body>
+</html>

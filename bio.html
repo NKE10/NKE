@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>About Me — Nakie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bio-hero { padding: 85px 0 75px; }
+    .bio-label { font: 10px "DM Mono", monospace; letter-spacing: .1em; color: #85847e; }
+    .bio-hero h1 { font: 800 clamp(54px, 8vw, 100px)/.98 "Manrope", sans-serif; letter-spacing: -.085em; margin: 32px 0; }
+    .bio-hero h1 em { font: italic 400 1em Georgia, serif; color: #f36b3f; }
+    .bio-lead { max-width: 650px; color: #77766f; font-size: 17px; line-height: 1.9; }
+    .bio-divider { height: 1px; background: #d9d6ce; margin: 50px 0; }
+    .bio-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; padding-bottom: 100px; }
+    .bio-sidebar { font: 10px "DM Mono", monospace; letter-spacing: .08em; color: #85847e; }
+    .bio-content h2 { font: 700 28px "Manrope", sans-serif; letter-spacing: -.05em; margin-bottom: 18px; }
+    .bio-content p { color: #6f6e67; font-size: 14px; line-height: 1.95; margin-bottom: 20px; }
+    .bio-highlight { margin: 35px 0; padding: 25px; background: #e8e5dd; border-left: 3px solid #f36b3f; }
+    .bio-highlight p { margin: 0; font: italic 22px/1.6 Georgia, serif; color: #292923; }
+    .bio-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+    .bio-fact { padding: 20px; background: #e8e5dd; }
+    .bio-fact span { display: block; font: 9px "DM Mono", monospace; color: #85847e; margin-bottom: 12px; }
+    .bio-fact strong { font: 600 14px "DM Sans", sans-serif; }
+    .bio-cta { padding: 30px; background: #23231f; color: #f4f2ed; margin-bottom: 80px; display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+    .bio-cta h2 { font: 700 26px "Manrope", sans-serif; letter-spacing: -.05em; margin-bottom: 8px; }
+    .bio-cta p { font-size: 12px; color: #aaa89f; line-height: 1.7; }
+    .bio-cta a { background: #f36b3f; padding: 15px 18px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+    @media(max-width:700px) {
+      .bio-hero { padding: 60px 0 45px; }
+      .bio-layout { grid-template-columns: 1fr; gap: 24px; padding-bottom: 60px; }
+      .bio-facts { grid-template-columns: 1fr 1fr; }
+      .bio-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  ```html
+<header class="navbar">
+  <a href="index.html" class="logo">NAKIE<span class="orange">.</span></a>
+
+  <nav class="nav-links" data-nav-links>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="projects.html">Projects</a>
+    <a href="now.html">Now</a>
+    <a href="journal.html">Journal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button
+      class="theme-toggle"
+      data-theme-toggle
+      type="button"
+      aria-label="Toggle dark mode"
+    >◐</button>
+
+    <button
+      class="menu-toggle"
+      data-menu-toggle
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >☰</button>
+  </div>
+</header>
+```
+
+  <main>
+    <section class="bio-hero section">
+      <p class="bio-label">A LITTLE MORE ABOUT ME &nbsp; / &nbsp; 01</p>
+      <h1>Curious by nature.<br><em>Builder</em> by choice.</h1>
+      <p class="bio-lead">
+        Hey, I'm Nakie. I'm a student from Cambodia with a growing interest
+        in software engineering, design, and building things that make
+        everyday life a little easier.
+      </p>
+      <div class="bio-divider"></div>
+      <p class="bio-label">STILL LEARNING. ALWAYS EXPLORING. NEVER DONE.</p>
+    </section>
+
+    <section class="bio-layout section">
+      <aside class="bio-sidebar">02 — MY STORY</aside>
+
+      <div class="bio-content">
+        <h2>I'm figuring things out by making things.</h2>
+        <p>
+          I've always been interested in technology and the possibilities
+          behind it. What started as curiosity about digital products has
+          grown into an interest in how they are designed, built, and
+          turned into something people can actually use.
+        </p>
+        <p>
+          I enjoy working with Figma and exploring visual design. Now I'm
+          also working toward understanding the code behind those designs,
+          from building websites to learning the foundations of software
+          engineering.
+        </p>
+        <p>
+          I don't expect to know everything right away. I'd rather keep
+          experimenting, learn from mistakes, and improve with every project.
+        </p>
+
+        <div class="bio-highlight">
+          <p>"I don't just want to use technology. I want to understand it, build with it, and create something of my own."</p>
+        </div>
+
+        <h2>What I'm working toward</h2>
+        <p>
+          My long-term goal is to become a software engineer and eventually
+          build useful digital products. I'm especially interested in apps,
+          business tools, logistics, and ways technology can solve real
+          problems in Cambodia and beyond.
+        </p>
+        <p>
+          For now, I'm focusing on learning, trying new ideas, and turning
+          small projects into experience.
+        </p>
+
+        <div class="bio-facts">
+          <div class="bio-fact">
+            <span>BASED IN</span>
+            <strong>Cambodia 🇰🇭</strong>
+          </div>
+          <div class="bio-fact">
+            <span>INTERESTED IN</span>
+            <strong>Software & design</strong>
+          </div>
+          <div class="bio-fact">
+            <span>CURRENT FOCUS</span>
+            <strong>Web development</strong>
+          </div>
+          <div class="bio-fact">
+            <span>MY APPROACH</span>
+            <strong>Learn by building</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bio-cta section" id="contact">
+      <div>
+        <h2>Let's make something useful.</h2>
+        <p>Have an interesting idea? I'm always open to learning and connecting.</p>
+      </div>
+      <a href="mailto:hello@example.com">Get in touch ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <a href="index.html" class="logo">n<span>.</span></a>
+    <span>MADE WITH CURIOSITY © 2026</span>
+    <a href="index.html" class="back-top">BACK HOME ↗</a>
+  </footer>
+</body>
+</html>

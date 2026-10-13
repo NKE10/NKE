@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="What Nakie is learning, building, and working toward.">
+  <title>Now — Nakie</title>
+  <script>
+    try {
+      const t = localStorage.getItem("nakie-theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">nakie<span>.</span></a>
+  <nav class="nav-links" data-nav-links aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="bio.html">Bio</a>
+    <a href="projects.html">Projects</a><a href="now.html" aria-current="page">Now</a>
+    <a href="journal.html">Journal</a>
+  </nav>
+  <a class="nav-contact" href="contact.html">LET'S TALK ↗</a>
+  <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch theme">☾</button>
+  <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+  <section class="section inner-hero">
+    <div class="eyebrow">03 / CURRENT CHAPTER <span class="orange">✳</span></div>
+    <h1>A little progress<br><span class="serif">every day.</span></h1>
+    <p>I'm a student exploring software engineering, design, and entrepreneurship. This page is a snapshot of what has my attention right now.</p>
+    <div class="inner-meta"><span>LEARNING</span><span>BUILDING</span><span>FIGURING IT OUT</span></div>
+  </section>
+
+  <section class="section inner-section">
+    <div class="inner-heading reveal">
+      <div><div class="section-label">CURRENT FOCUS / 001</div><h2>What has my attention.</h2></div>
+      <p>My priorities will change over time. That's part of learning what I enjoy and what I'm good at.</p>
+    </div>
+
+    <div class="inner-grid">
+      <article class="inner-card reveal">
+        <div class="inner-card-top"><span class="inner-icon">⌘</span><span class="project-type">01 / TECH</span></div>
+        <h3>Learning to code</h3>
+        <p>Building a foundation in HTML, CSS, and JavaScript, then gradually moving toward real applications and software engineering.</p>
+        <div class="card-tags"><span class="tag">Web</span><span class="tag">Programming</span></div>
+      </article>
+      <article class="inner-card reveal">
+        <div class="inner-card-top"><span class="inner-icon">✳</span><span class="project-type">02 / DESIGN</span></div>
+        <h3>Practicing design</h3>
+        <p>Getting better at layout, typography, hierarchy, and turning ideas in Figma into usable websites.</p>
+        <div class="card-tags"><span class="tag">Figma</span><span class="tag">UI design</span></div>
+      </article>
+      <article class="inner-card reveal">
+        <div class="inner-card-top"><span class="inner-icon">N.</span><span class="project-type">03 / BUSINESS</span></div>
+        <h3>Growing NEXTA LAB</h3>
+        <p>Learning through a small tech-accessories business: content, product selection, pricing, and understanding customers.</p>
+        <div class="card-tags"><span class="tag">E-commerce</span><span class="tag">Entrepreneurship</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section inner-section">
+    <div class="inner-heading reveal">
+      <div><div class="section-label">PERSONAL SCORECARD / 002</div><h2>In progress, not perfect.</h2></div>
+      <p>These are illustrative focus indicators, not objective skill assessments. Update them to reflect your own progress.</p>
+    </div>
+
+    <div class="inner-card reveal">
+      <div class="progress-item">
+        <div class="progress-caption"><strong>Web development</strong><span>JUST GETTING STARTED</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:25%"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-caption"><strong>Design practice</strong><span>BUILDING EXPERIENCE</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:45%"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-caption"><strong>Personal projects</strong><span>ONE STEP AT A TIME</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:20%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section inner-section">
+    <div class="inner-heading reveal">
+      <div><div class="section-label">THE LONG GAME / 003</div><h2>Where I'm heading.</h2></div>
+    </div>
+    <div class="inner-timeline reveal">
+      <article class="inner-timeline-item">
+        <div class="timeline-date">RIGHT NOW</div>
+        <div><h3>Strengthen the foundations.</h3><p>Keep up with school while building programming skills through small, practical projects.</p></div>
+      </article>
+      <article class="inner-timeline-item">
+        <div class="timeline-date">NEXT CHAPTER</div>
+        <div><h3>Ship useful things.</h3><p>Publish websites, learn how applications work, and improve projects using feedback from real people.</p></div>
+      </article>
+      <article class="inner-timeline-item">
+        <div class="timeline-date">LONG TERM</div>
+        <div><h3>Become a software engineer.</h3><p>Build strong technical skills and eventually create digital products that solve practical problems in Cambodia.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="inner-cta reveal">
+      <div><div class="section-label">FOLLOW THE JOURNEY</div><h2>More making. Less waiting.</h2><p>I'll keep updating this site as I learn, experiment, and finish projects.</p></div>
+      <a class="button button-dark" href="journal.html">READ THE JOURNAL <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="section footer">
+  <span>© <span data-year></span> NAKIE · BUILT WITH CURIOSITY</span>
+  <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a>
+</footer>
+</body>
+</html>
